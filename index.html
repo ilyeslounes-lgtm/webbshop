@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Wrapper samlar hela sidans innehåll och centrerar det -->
+    <div id="wrapper">
+
+        <!-- Top = det svarta fältet högst upp med menylänkar -->
+        <div id="top">
+            <div id="toplinks">
+                <a href="#">WHAT'S NEW</a>
+                <span class id="divider">|</span> 
+                <a href="#"> DESIGNER </a>
+                <span class id="divider">|</span> 
+                <a href="#"> CLOTHING </a>
+                <span class id="divider">|</span> 
+                <a href="#"> SHOES </a>
+                <span class id="divider">|</span> 
+                <a href="#"> BAGS </a>
+                <span class id="divider">|</span> 
+                <a href="#"> ACCESSORIES </a>
+            </div>
+        </div>
+
+        <!-- Sign In och Shopping bag ska hamna uppe till höger och img src gör en bild länk. Span är en inline behållare och används för att gruppera text inuti en block -->
+             
+        <div id="rightinfo">
+            <img src="c:\Users\ilyes.lounes\Documents\GitHub\webbshop\signin.jpg" style="vertical-align: top" alt="Sign In">
+            <a href="#"> SIGN IN</a>
+         
+            <span style="padding-left:40px"></span>
+            <img src="c:\Users\ilyes.lounes\Documents\GitHub\webbshop\shoppingbag.jpg" style="vertical-align: top" alt="Shopping Bag">
+            <a href="#"> SHOPPING BAG- 0 ITEMS</a>
+        </div>
+
+        <!-- Header = det vita fältet med logga och menyer -->
+         
+        <div id="header">
+            <div id="headerleft">
+                <a href="#"> NEW ARRIVALS</a>
+                <span class id="divider">|</span> 
+                <a href="#"> SHOP BOY</a>
+                <span class id="divider">|</span> 
+                <a href="#"> SHOP GIRL</a>
+            </div>
+            <div id="headermid">
+                <a href="#"><img src="c:\Users\ilyes.lounes\Documents\GitHub\webbshop\bambinilogo.jpg" alt="Bambini"></a>
+            </div>
+            <div id="headerright">
+                <a href="#"> SHOP BABY</a>
+                <span class id="divider">|</span> 
+                <a href="#"> DESIGNERS</a>
+                <span class id="divider">|</span> 
+                <a href="#"> SALE</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- En div för frambilden och där nere en div fylld med kategorirer med table som organiserar  och top down fick lite problem när jag skulle länka mina bilder för jag länkade dem till skrivbord, fast fick hjälp av Robert som sa till mig att jag borde sätta det i en samma mapp -->
+    <div id="frontImage">
+        <button id="shopNowButton">SHOP NOW</button>
+        <!--En knapp där man köpa JUST NU -->
+    </div>
+    <div id="categories">
+        <table>
+            <tr>
+                <td>
+                    <a href="#"><img src="c:\Users\ilyes.lounes\Documents\GitHub\webbshop\accessories.jpg" alt="Accessories"></a>
+                </td>
+                <td>
+                    <a href="#"><img src="c:\Users\ilyes.lounes\Documents\GitHub\webbshop\coats.jpg" alt="Coats"></a>
+                </td>
+                <td>
+                    <a href="#"><img src="c:\Users\ilyes.lounes\Documents\GitHub\webbshop\shirts.jpg" alt="Shirts"></a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">DISCOVER ACCESSORIES</a></td>
+                <td><a href="#">DISCOVER COATS</a></td>
+                <td><a href="#">DISCOVER SHIRTS</a></td>
+            </tr>
+            </table>
+    </div>
+    <div id="newsletter">
+        <div>
+            <h2>SUBSCRIBE TO OUR</h2>
+            <input id="EmailInput" type="email" placeholder="Enter your email address here">
+        </div>
+        <div> <h1>NEWSLETTER</h1>
+        <button id="subscribeButton">SUBSCRIBE</button>
+    </div>
+    <div>
+        <p>Sign up for our newsletter to stay updated on the latest trends and offers!</p>
+    </div>
+    </div>
+    <!--Användaren kan skriva deras email och prenumera på newsletter-->
+</div>
+
+<!--UL funkade inte så bra så jag frågade Gemini vad som skulle vara bättre för att hjälpa mig och den sa att Table kan hjälpa så jag kollade vad jag gjorde innan och använde typ samma struktur från den table delen -->
+<footer>
+    <table class="footer-table">
+        <tr>
+            <th>COMPANY</th>
+            <th>CATEGORY</th>
+            <th>CONTACT US</th>
+            <th>Follow Us On</th>
+        </tr>
+        <tr>
+            <td><hr></td>
+            <td><hr></td>
+            <td><hr></td>
+            <td><hr></td>
+         <!-- Robin förklarade för mig hur man kan göra detta -->
+        </tr>
+        <tr>
+            <td> 
+                <a href="#">What's new</a><br>
+                <a href="#"> Designer</a><br>
+                <a href="#"> Clothing </a><br>
+                <a href="#"> Shoes </a><br>
+                <a href="#"> Bags</a><br>
+                <a href="#"> Accessories</a><br>
+            </td>
+
+            <td>
+                <a href="#">New arrivals</a><br>
+                <a href="#">Shop boy</a><br>
+                <a href="#">Shop girl</a><br>
+                <a href="#">Shop baby</a><br>
+                <a href="#">Designers</a>
+            </td>
+            <td>
+                Goldenes QuartierTuchlaubenhof 7<br>
+                Vienna, 1st district<br>
+                <strong>+43-1-890 69 67</strong><br>
+                <a href="mailto:gq@bambinifashion.at">gq@bambinifashion.at</a>
+            </td>
+            <td>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Linkedin</a><br>
+                <a href="#">Rss</a>
+            </td>
+        </tr>
+    </table>
+
+      
+
+            
+           <!-- Jag fick hjälp av AI med att förklara lite med table och några exempel (den gav mig också länk till w3schools) (inte att den skrev koden åt mig bara att den gav mig tips) -->     
+            
+                
+           <div id="copyright">
+            Copyright © 2026 All rights reserved to me (Ilyes)
+        </div>
+    </footer>
+    
+    </body>
+    </html>

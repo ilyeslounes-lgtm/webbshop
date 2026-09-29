@@ -1,0 +1,250 @@
+/* Body = hela sidans bakgrund. Tar bort default-marginalen 
+   som webbläsaren annars lägger till automatiskt runt sidan */
+body
+{
+    margin:0px;
+    background-color:gainsboro;
+}
+
+/* Wrapper = en "låda" som samlar allt innehåll och centrerar 
+ det på sidan med margin: auto */
+
+#wrapper
+{
+   width: 1400px;
+   margin: auto;
+}
+/* Top = det översta svarta fältet högst upp på sidan och ändrar font på texten och storleken hur bred o lång dem ska va  */
+#top
+{
+    background-color: #252525;
+    height: 24px;
+    width: 100%;
+    padding-top: 10px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+ /* Toplinks = länkarna inuti top-fältet. Floatas åt vänster  */
+#toplinks
+{
+    margin-left: 115px;
+    float:left;
+}
+
+/* Alla <a>-taggar inuti top ska vara vita och ingen dekoration på texten */
+#top a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+ /* När man hovrar med musen över en länk i top byter den färg till orange */
+#top a:hover
+{
+    color: #f7641d;
+}
+
+   
+   /* Divider = de små strecken/mellanrummen mellan länkarna. Jag fick hjälp av AI där de sa att jag  måste man skriva punkt istället för # */
+.divider
+{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+ /*hamnar uppe till höger */
+#rightinfo
+{
+    float:right;
+    margin-left: 220px;
+}
+/* Header = det vita fältet med logga och menyer under top-fältet */
+#header
+{
+    height: 81px;
+    background-color: #ffffff;
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+#header a
+{
+    color: #000000;
+    text-decoration: none;
+}
+ /* På header a ( ska vara svarta och ingen dekoration på texten) på header hover ska de bli orange när man hovrar */
+#header a:hover
+{
+    color: #f7641d;
+}
+/* Hover-effekt för länkar i header, samma orange som i top */
+#headerleft
+{
+    float:left;
+    margin-left: 144px;
+    padding-top: 34px;
+}
+/* Headermid = loggan i mitten av header, hamnar också i vänster lite */
+#headermid
+{
+    float:left;
+    padding-left: 120px;
+}
+/* Headerright = länkarna till höger i header */
+
+#headerright
+{
+    float:left;
+    margin-left: 120px;
+    padding-top: 34px;
+}
+/* Stor frambild på förstasidan och höjden på den. 
+Shop now knappen som ligger uppe på frambilden med orange bakgrund och vit text */
+#frontImage
+{
+    background-image: url("c:/Users/ilyes.lounes/Documents/GitHub/webbshop/front.jpg");
+    height: 582px;
+}
+
+#shopNowButton
+{
+    background-color: #f7641d;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    width: 196px; 
+    height: 52px;
+    border: 0px;
+    position: relative;
+    top: 364px;
+    left: 214px;
+    cursor: pointer;
+
+}
+/* som jag sa innan när den hovrar blir den ljus orange  */
+#shopNowButton:hover
+{
+    background-color: #f7a71d;
+}
+/* Kategorier sektionen med vit bakgrund och 410px höjd */
+#categories
+{
+    height: 410px;
+    background-color: #ffffff;
+}
+#categories table
+{
+    margin: auto;
+    padding-right: 30px;
+}
+/* Centrerar tabellen för kategorier i mitten.  
+Fixar padding och textstil för varje cell i kategoritabellen*/
+#categories td
+{
+    padding: 30px 0px 0px 30px;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+}
+#categories td a
+{
+    text-decoration: none;
+}
+/* Tar bort understrykning från länkarna i kategorier.
+Gör att texten i kategorier blir orange när man hovrar med musen */
+#categories td a:hover
+{
+    color: #f7641d;
+}
+/*Newsletter fältet med bakgrundsbild */
+#newsletter
+{
+  background-image: url("c:/Users/ilyes.lounes/Documents/GitHub/webbshop/newsletter.jpg");
+  background-repeat: no-repeat;
+  background-color: #c69c6c;
+  height: 218px;
+  padding-top: 100px;
+}
+/* Gör h1 inline och sätter storleken på rubriken */
+#newsletter h1
+{
+    display: inline;
+    font-size: 58px;
+    margin-right: 46px;
+}
+/*h2 rubriken i nyhetsbrevet med lite tunnare font och mellan rum*/
+#newsletter h2
+{
+    display: inline;
+   font-weight: lighter;
+   font-size: 38px;
+   letter-spacing: 4px;
+   margin-right: 40px;
+}
+/* du skriver email här*/
+#EmailInput
+{
+    height: 34px;
+    width: 380px;
+    font-size: 16px;
+    color: black;
+    padding-left: 20px;
+    position: relative;
+    top: -6px;
+}
+/* subscribe button svart bakgrund med vit text */
+#subscribeButton
+{
+    background-color: #252525;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    height: 40px;
+    width: 404px;
+    position: relative;
+    top: -12px;
+}
+#subscribeButton:hover
+{
+    background-color: #353535;
+    color: #f7941d;
+    cursor: pointer;
+}
+/* texten är centerad */
+#newsletter p
+{
+   letter-spacing: 0px;
+   font-size: 13px;
+   text-align: center;
+   padding-right: 260px;
+}
+/* Tjock svart linje under rubriken (fick hjälp av AI här */
+.footer-table th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000; 
+}
+ /* delar länkarna med 25% bredd */ 
+.footer-table td {
+    vertical-align: top;
+    padding-top: 15px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555;
+    width: 25%;
+}
+
+/*  copyright-fältet längst ner */
+#copyright {
+    background-color: #222;
+    color: #fff;
+}
